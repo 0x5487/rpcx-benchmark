@@ -4,6 +4,7 @@ go 1.23.0
 
 require (
 	github.com/cloudwego/kitex v0.14.1
+	github.com/cloudwego/prutal v0.1.2
 	github.com/gogo/protobuf v1.3.2
 	github.com/rpcxio/rpcx-benchmark/proto v0.0.0-20220730153134-292b05d6ec48
 	github.com/rpcxio/rpcx-benchmark/stat v0.0.0-20221207062924-99f3a3f589b5

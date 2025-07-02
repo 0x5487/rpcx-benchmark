@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/cloudwego/kitex/client"
-	"github.com/gogo/protobuf/proto"
-	"github.com/rpcxio/rpcx-benchmark/kitex/pb/hello"
-	pb "github.com/rpcxio/rpcx-benchmark/proto"
+	"github.com/cloudwego/prutal"
+	"github.com/rpcxio/rpcx-benchmark/kitex/kitex_gen/pb"
+	"github.com/rpcxio/rpcx-benchmark/kitex/kitex_gen/pb/hello"
 	"github.com/rpcxio/rpcx-benchmark/stat"
 	"github.com/smallnest/rpcx/log"
 	"go.uber.org/ratelimit"
@@ -53,7 +53,7 @@ func main() {
 	args := prepareArgs()
 
 	// 请求消息大小
-	b, _ := proto.Marshal(args)
+	b, _ := prutal.Marshal(args)
 	log.Infof("message size: %d bytes\n\n", len(b))
 
 	// 等待所有测试完成

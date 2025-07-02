@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/cloudwego/kitex/server"
-	"github.com/rpcxio/rpcx-benchmark/kitex/pb/hello"
-	pb "github.com/rpcxio/rpcx-benchmark/proto"
+	"github.com/rpcxio/rpcx-benchmark/kitex/kitex_gen/pb"
+	"github.com/rpcxio/rpcx-benchmark/kitex/kitex_gen/pb/hello"
 	"github.com/smallnest/rpcx/log"
 	"golang.org/x/net/context"
 )
